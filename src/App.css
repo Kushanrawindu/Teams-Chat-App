@@ -83,7 +83,7 @@
 }
 
 .chat-title {
-  color: #7554a0;
+  color: #2d79bb;
   font-weight: 800;
   font-size: 24px;
 }
@@ -163,7 +163,7 @@
 .message-form {
   overflow: hidden;
   border-radius: 6px;
-  border: 1px solid #3b2a50;
+  border: 1px solid #7540b5;
   background-color: white;
 }
 
