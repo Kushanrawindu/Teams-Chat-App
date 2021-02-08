@@ -18,7 +18,7 @@ const MessageForm = (props) => {
     }
 
     const handleUpload = (event) => {
-        sendMessage(creds, chatId, {files: event.target.value, text:''})
+        sendMessage(creds, chatId, {files: event.target.files, text:''})
     }
     
     const handleChange = (event) => {
