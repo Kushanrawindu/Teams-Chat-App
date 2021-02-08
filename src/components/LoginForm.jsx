@@ -4,6 +4,7 @@ import axios from 'axios'
 const LoginForm = () => {
     const [username, setUsername] = useState('');
     const [password, setPassword] = useState('');
+    const [error, seterror] = useState('');
 
     const handleSubmit = async (e) => {         //using async to put await inside try-catch
         e.preventDefault();
@@ -22,6 +23,7 @@ const LoginForm = () => {
             
         }catch(error){
             //error -> try with new username..
+            seterror('Oops, incorrect credentials..')
         }
     }
 
@@ -37,6 +39,7 @@ const LoginForm = () => {
                             <span>Start Chatting</span>
                         </button>
                     </div>
+                    <h2 className="error">{error}</h2>
                 </form>
             </div>
         </div>
